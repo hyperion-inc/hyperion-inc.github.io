@@ -10,7 +10,9 @@
     "start": "npm run statinamic -- --server --open --dev",
     "build": "npm run statinamic -- --static --production",
     "pretest": "npm run lint",
-    "test": "npm run build"
+    "test": "npm run build",
+    "predeploy": "npm run build",
+    "deploy": "babel-node scripts/deploy"
   },
   "statinamic": {
     "CNAME": true
@@ -62,6 +64,7 @@
     "eslint-plugin-react": "^3.6.2",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.1",
+    "gh-pages": "^0.11.0",
     "highlight.js": "^8.5.0",
     "history": "^2.0.0",
     "invariant": "^2.1.1",
