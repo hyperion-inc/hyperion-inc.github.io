@@ -1,9 +1,8 @@
-import React, { Component } from "react"
+import React, { Component } from 'react';
 
-import styles from "./index.css"
+import styles from './index.css';
 
-export default class Footer extends Component {
-
+export default class Footer extends Component { // eslint-disable-line
   render() {
     return (
       <footer className={ styles.footer }>
@@ -13,10 +12,10 @@ export default class Footer extends Component {
         >
           { "Powered by " }
           <span className={ styles.reference }>
-            {  "<Statinamic />" }
+            { "<Statinamic />" }
           </span>
         </a>
       </footer>
-    )
+    );
   }
 }

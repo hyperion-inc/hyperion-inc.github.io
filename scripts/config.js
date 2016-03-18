@@ -1,6 +1,6 @@
-import pkg from "../package.json"
-import configurator from "statinamic/lib/configurator"
+import pkg from '../package.json';
+import configurator from 'statinamic/lib/configurator';
 
-const config = configurator(pkg)
+const config = configurator(pkg);
 
-export default config
+export default config;

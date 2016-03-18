@@ -1,16 +1,16 @@
-import React, { Component } from "react"
-import { PropTypes } from "react"
-import Helmet from "react-helmet"
+import React, { Component } from 'react';
+import { PropTypes } from 'react';
+import Helmet from 'react-helmet';
 
-import Header from "../Header"
-import Footer from "../Footer"
+import Header from '../Header';
+import Footer from '../Footer';
 
-import styles from "./index.css"
+import styles from './index.css';
 
-export default class Layout extends Component {
+export default class Layout extends Component { // eslint-disable-line
 
   static propTypes = {
-    children: PropTypes.oneOfType([ PropTypes.array, PropTypes.object ]),
+    children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
   };
 
   static contextTypes = {
@@ -20,14 +20,14 @@ export default class Layout extends Component {
   render() {
     const {
       pkg,
-    } = this.context.metadata
+    } = this.context.metadata;
 
     return (
       <div className={ styles.layout }>
         <Helmet
           meta={ [
-            { property: "og:site_name", content: pkg.name },
-            { name: "twitter:site", content: `@${ pkg.twitter }` },
+            { property: 'og:site_name', content: pkg.name },
+            { name: 'twitter:site', content: `@${pkg.twitter}` },
           ] }
         />
         <Header />
@@ -36,6 +36,6 @@ export default class Layout extends Component {
         </div>
         <Footer />
       </div>
-    )
+    );
   }
 }

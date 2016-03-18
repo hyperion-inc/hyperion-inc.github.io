@@ -1,8 +1,8 @@
-import path from "path"
+import path from 'path';
 
-import config from "./config.js"
-import webpackConfig from "./webpack.config.babel.js"
-import pkg from "../package.json"
+import config from './config.js';
+import webpackConfig from './webpack.config.babel.js';
+import pkg from '../package.json';
 
 // ! client side loader only \\
 export default {
@@ -13,26 +13,26 @@ export default {
       ...webpackConfig.module.loaders,
       {
         test: /\.json$/,
-        loader: "json-loader",
+        loader: 'json-loader',
       },
       {
         test: /\.js$/,
         loaders: [
-          "babel-loader?" +
+          'babel-loader?' + // eslint-disable-line prefer-template
           // hack for babel config to undo babel-plugin-webpack-loaders effect
           JSON.stringify({
             ...pkg.babel,
             // add hot loading/error reporting for development
             presets: [
               ...pkg.babel.presets,
-              ...config.dev && [ "babel-preset-react-hmre" ],
+              ...config.dev && ['babel-preset-react-hmre'],
             ],
             // forget "statinamic" env
-            env: { ...pkg.babel.env, "statinamic": undefined },
+            env: { ...pkg.babel.env, statinamic: undefined },
             // prevent babel going to use your original config
             babelrc: false,
           }),
-          "eslint-loader?fix",
+          'eslint-loader?fix',
         ],
         exclude: /node_modules/,
       },
@@ -43,10 +43,10 @@ export default {
 
   output: {
     ...webpackConfig.output,
-    libraryTarget: "var",
-    filename: "[name].[hash].js",
+    libraryTarget: 'var',
+    filename: '[name].[hash].js',
   },
   entry: {
-    "statinamic-client": path.join(__dirname, "index-client"),
+    'statinamic-client': path.join(__dirname, 'index-client'),
   },
-}
+};
