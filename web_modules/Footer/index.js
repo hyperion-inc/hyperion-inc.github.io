@@ -6,15 +6,7 @@ export default class Footer extends Component { // eslint-disable-line
   render() {
     return (
       <footer className={ styles.footer }>
-        <a
-          href="http://moox.io/statinamic/"
-          className={ styles.link }
-        >
-          { "Powered by " }
-          <span className={ styles.reference }>
-            { "<Statinamic />" }
-          </span>
-        </a>
+          { "© Hyperion Industries Inc." }
       </footer>
     );
   }
