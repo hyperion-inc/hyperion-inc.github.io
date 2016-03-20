@@ -48,7 +48,10 @@
     }
   },
   "stylelint": {
-    "extends": "stylelint-config-standard"
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "string-no-newline": null
+    }
   },
   "devDependencies": {
     "babel-cli": "^6.3.17",
