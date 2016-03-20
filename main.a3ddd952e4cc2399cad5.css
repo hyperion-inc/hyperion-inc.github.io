@@ -23,6 +23,48 @@ body {
   }
   }
 
+@media (min-aspect-ratio: 16/12) {
+
+  .web_modules-layouts-Landing-index--background--191cD {
+    background-size: 45%;
+  }
+  }
+
+@media (min-aspect-ratio: 16/10) {
+
+  .web_modules-layouts-Landing-index--background--191cD {
+    background-size: 40%;
+  }
+  }
+
+@media (min-aspect-ratio: 16/9) {
+
+  .web_modules-layouts-Landing-index--background--191cD {
+    background-size: 35%;
+  }
+  }
+
+@media (min-aspect-ratio: 16/8) {
+
+  .web_modules-layouts-Landing-index--background--191cD {
+    background-size: 30%;
+  }
+  }
+
+@media (min-aspect-ratio: 16/7) {
+
+  .web_modules-layouts-Landing-index--background--191cD {
+    background-size: 25%;
+  }
+  }
+
+@media (min-aspect-ratio: 16/6) {
+
+  .web_modules-layouts-Landing-index--background--191cD {
+    background-size: 20%;
+  }
+  }
+
 .web_modules-layouts-Landing-index--grid--30HI- {
   position: absolute;
   width: 100%;
