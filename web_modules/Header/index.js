@@ -22,12 +22,12 @@ export default class Header extends Component { // eslint-disable-line
       <header className={ menuColor }>
         <nav className={ styles.nav }>
           <div className={ styles.navPart1 }>
-            <a
+            <Link
               className={ styles.link }
-              href="/"
+              to="/"
             >
               <SVG svg={ hyperionSVG } />{ "Home" }
-            </a>
+            </Link>
           </div>
           <div className={ styles.navPart2 }>
             <Link
