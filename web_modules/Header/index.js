@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 
 import styles from './index.css';
+import SVG from 'react-svg-inline';
+import hyperionSVG from '../icons/hyperion-logo.svg';
 
 export default class Header extends Component { // eslint-disable-line
 
@@ -10,12 +12,12 @@ export default class Header extends Component { // eslint-disable-line
       <header className={ styles.header }>
         <nav className={ styles.nav }>
           <div className={ styles.navPart1 }>
-            <Link
+            <a
               className={ styles.link }
-              to="/"
+              href="/"
             >
-              { "Home" }
-            </Link>
+              <SVG svg={ hyperionSVG } />{ "Home" }
+            </a>
           </div>
           <div className={ styles.navPart2 }>
             <Link

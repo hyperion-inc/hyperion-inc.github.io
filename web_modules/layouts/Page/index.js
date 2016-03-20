@@ -3,6 +3,8 @@ import { PropTypes } from 'react';
 import Helmet from 'react-helmet';
 import invariant from 'invariant';
 
+import Footer from '../../Footer';
+
 export default class Page extends Component { // eslint-disable-line
 
   static propTypes = {
@@ -50,22 +52,25 @@ export default class Page extends Component { // eslint-disable-line
 
     return (
       <div>
-        <Helmet
-          title={ metaTitle }
-          meta={ meta }
-        />
-
-        {
-          head.title &&
-          <h1>{ head.title }</h1>
-        }
-        {
-          body &&
-          <div
-            dangerouslySetInnerHTML={ { __html: body } }
+        <div>
+          <Helmet
+            title={ metaTitle }
+            meta={ meta }
           />
-        }
-        { this.props.children }
+
+          {
+            head.title &&
+            <h1>{ head.title }</h1>
+          }
+          {
+            body &&
+            <div
+              dangerouslySetInnerHTML={ { __html: body } }
+            />
+          }
+          { this.props.children }
+        </div>
+        <Footer />
       </div>
     );
   }

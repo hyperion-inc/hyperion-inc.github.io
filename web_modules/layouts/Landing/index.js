@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import invariant from 'invariant';
 
 import styles from './index.css';
+import Footer from '../../Footer';
 
 export default ({ children, __filename, __url, head, body }) => { // eslint-disable-line
   invariant(
@@ -34,8 +35,9 @@ export default ({ children, __filename, __url, head, body }) => { // eslint-disa
       <div className= { styles.title }>HYPERION INDUSTRIES</div>
       <div className= { styles.grid }></div>
       <div className= { styles.noise }></div>
-      { head.title && <h1>{ head.title }</h1>}
-      { body && <div dangerouslySetInnerHTML={ { __html: body } } /> }
+      <div className = { styles.footer }>
+        <Footer />
+      </div>
     </div>
   );
 };
