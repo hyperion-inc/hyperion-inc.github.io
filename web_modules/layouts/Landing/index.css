@@ -64,7 +64,7 @@ body {
   color: white;
   font-size: 85px;
   margin: auto;
-  height: 140px;
+  height: 130px;
   text-shadow: -0.015em 0 0 red, 0.015em 0 0 cyan;
   font-weight: 100;
   line-height: normal;
@@ -73,6 +73,17 @@ body {
 
   @media (width < 950px) {
     font-size: 70px;
+    height: 150px;
+  }
+
+  @media (width < 400px) {
+    font-size: 50px;
+    height: 120px;
+  }
+
+  @media (width < 300px) {
+    font-size: 35px;
+    height: 95px;
   }
 }
 
