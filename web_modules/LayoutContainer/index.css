@@ -3,9 +3,9 @@
 
 body {
   margin: 0;
-
   font-size: 1rem;
   line-height: 1.5rem;
+  background-color: rgb(215, 225, 225);
 
   /* system font https://medium.com/designing-medium/system-shock-5b1dc6d6596f */
   font-family: "Source Sans Pro", "Helvetical Neue", -apple-system, sans-serif;
@@ -58,5 +58,6 @@ blockquote {
 .content {
   max-width: 60rem;
   margin: auto;
-  padding: 1rem 0.75rem;
+  padding: 5rem 1rem 0.75rem 0.75rem;
+  background-color: white;
 }

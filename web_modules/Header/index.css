@@ -3,10 +3,19 @@
 }
 
 .header {
-  color: #eee;
-  position: fixed;
+  position: absolute;
   z-index: 1000;
   width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.light {
+  color: #eee;
+}
+
+.dark {
+  color: black;
 }
 
 .nav {

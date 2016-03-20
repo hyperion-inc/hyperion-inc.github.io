@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import invariant from 'invariant';
 
 import styles from './index.css';
+import Header from '../../Header';
 import Footer from '../../Footer';
 
 export default ({ children, __filename, __url, head, body }) => { // eslint-disable-line
@@ -31,6 +32,7 @@ export default ({ children, __filename, __url, head, body }) => { // eslint-disa
         title= { metaTitle }
         meta = { meta }
       />
+      <Header isLight />
       <div className= { styles.background }></div>
       <div className= { styles.title }>HYPERION INDUSTRIES</div>
       <div className= { styles.grid }></div>

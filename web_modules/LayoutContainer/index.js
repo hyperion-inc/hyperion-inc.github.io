@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { PropTypes } from 'react';
 import Helmet from 'react-helmet';
 
-import Header from '../Header';
+// import Header from '../Header';
 
 import styles from './index.css';
 
@@ -29,7 +29,6 @@ export default class Layout extends Component { // eslint-disable-line
             { name: 'twitter:site', content: `@${pkg.twitter}` },
           ] }
         />
-        <Header />
         <div className={ styles.content }>
           { this.props.children }
         </div>

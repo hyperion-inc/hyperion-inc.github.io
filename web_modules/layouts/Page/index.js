@@ -3,7 +3,9 @@ import { PropTypes } from 'react';
 import Helmet from 'react-helmet';
 import invariant from 'invariant';
 
+import Header from '../../Header';
 import Footer from '../../Footer';
+import styles from './index.css';
 
 export default class Page extends Component { // eslint-disable-line
 
@@ -57,7 +59,8 @@ export default class Page extends Component { // eslint-disable-line
             title={ metaTitle }
             meta={ meta }
           />
-
+          <Header isDark />
+          <div className = { styles.background }></div>
           {
             head.title &&
             <h1>{ head.title }</h1>
