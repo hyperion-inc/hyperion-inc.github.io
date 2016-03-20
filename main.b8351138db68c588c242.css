@@ -85,7 +85,7 @@ body {
   color: white;
   font-size: 85px;
   margin: auto;
-  height: 140px;
+  height: 130px;
   text-shadow: -0.015em 0 0 red, 0.015em 0 0 cyan;
   font-weight: 100;
   line-height: normal;
@@ -97,6 +97,23 @@ body {
 
   .web_modules-layouts-Landing-index--title--1VTB- {
     font-size: 70px;
+    height: 150px;
+  }
+  }
+
+@media (max-width: 399px) {
+
+  .web_modules-layouts-Landing-index--title--1VTB- {
+    font-size: 50px;
+    height: 120px;
+  }
+  }
+
+@media (max-width: 299px) {
+
+  .web_modules-layouts-Landing-index--title--1VTB- {
+    font-size: 35px;
+    height: 95px;
   }
   }
 
