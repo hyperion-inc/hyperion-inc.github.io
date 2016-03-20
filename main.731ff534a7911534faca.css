@@ -1,12 +1,9 @@
-body {
-  background-color: #222;
-}
-
 .web_modules-layouts-Landing-index--background--191cD {
   background-image: url("/assets/hyperion.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 55%;
+  background-color: #222;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -16,52 +13,52 @@ body {
   bottom: 0
 }
 
-@media (max-width: 949px) {
+  @media (max-width: 949px) {
 
   .web_modules-layouts-Landing-index--background--191cD {
-    background-size: 65%;
+    background-size: 65%
   }
   }
 
-@media (min-aspect-ratio: 16/12) {
-
-  .web_modules-layouts-Landing-index--background--191cD {
-    background-size: 45%;
-  }
-  }
-
-@media (min-aspect-ratio: 16/10) {
+  @media (min-aspect-ratio: 16/12) {
 
   .web_modules-layouts-Landing-index--background--191cD {
-    background-size: 40%;
+    background-size: 45%
   }
   }
 
-@media (min-aspect-ratio: 16/9) {
-
-  .web_modules-layouts-Landing-index--background--191cD {
-    background-size: 35%;
-  }
-  }
-
-@media (min-aspect-ratio: 16/8) {
+  @media (min-aspect-ratio: 16/10) {
 
   .web_modules-layouts-Landing-index--background--191cD {
-    background-size: 30%;
+    background-size: 40%
   }
   }
 
-@media (min-aspect-ratio: 16/7) {
-
-  .web_modules-layouts-Landing-index--background--191cD {
-    background-size: 25%;
-  }
-  }
-
-@media (min-aspect-ratio: 16/6) {
+  @media (min-aspect-ratio: 16/9) {
 
   .web_modules-layouts-Landing-index--background--191cD {
-    background-size: 20%;
+    background-size: 35%
+  }
+  }
+
+  @media (min-aspect-ratio: 16/8) {
+
+  .web_modules-layouts-Landing-index--background--191cD {
+    background-size: 30%
+  }
+  }
+
+  @media (min-aspect-ratio: 16/7) {
+
+  .web_modules-layouts-Landing-index--background--191cD {
+    background-size: 25%
+  }
+  }
+
+  @media (min-aspect-ratio: 16/6) {
+
+  .web_modules-layouts-Landing-index--background--191cD {
+    background-size: 20%
   }
   }
 
@@ -97,7 +94,7 @@ body {
 
   .web_modules-layouts-Landing-index--title--1VTB- {
     font-size: 70px;
-    height: 150px;
+    height: 150px
   }
   }
 
@@ -105,7 +102,7 @@ body {
 
   .web_modules-layouts-Landing-index--title--1VTB- {
     font-size: 50px;
-    height: 120px;
+    height: 120px
   }
   }
 
@@ -113,7 +110,7 @@ body {
 
   .web_modules-layouts-Landing-index--title--1VTB- {
     font-size: 35px;
-    height: 95px;
+    height: 95px
   }
   }
 

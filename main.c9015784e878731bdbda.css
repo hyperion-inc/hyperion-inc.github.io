@@ -1,8 +1,17 @@
 .web_modules-Header-index--header--19Fr8 {
-  color: #eee;
-  position: fixed;
+  position: absolute;
   z-index: 1000;
   width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.web_modules-Header-index--light--2Ll3q {
+  color: #eee;
+}
+
+.web_modules-Header-index--dark--KA963 {
+  color: black;
 }
 
 .web_modules-Header-index--nav--34d_e {
