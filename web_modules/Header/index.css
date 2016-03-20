@@ -4,7 +4,9 @@
 
 .header {
   color: #eee;
-  background: #111;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
 }
 
 .nav {
@@ -14,8 +16,16 @@
 
   max-width: calc(60rem + (var(--nav-item-padding) * 2));
   margin: 0 auto 1rem;
-  padding: 0 1rem;
+  padding: 0 5rem;
   line-height: 3rem;
+
+  @media (width < 600px) {
+    padding: 0 2rem;
+  }
+
+  @media (width > 965px) {
+    padding: 0 10rem;
+  }
 }
 
 .navPart1,
@@ -35,9 +45,9 @@
 }
 
 .link svg {
-  fill: currentColor;
   opacity: 0.5;
   margin-right: 0.5rem;
   width: 1rem;
   height: 1rem;
+  padding-top: 20px;
 }
