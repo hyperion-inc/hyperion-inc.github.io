@@ -14,6 +14,10 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+
+  @media (width < 950px) {
+    background-size: 65%;
+  }
 }
 
 .grid {
@@ -37,9 +41,16 @@ body {
   font-size: 85px;
   margin: auto;
   z-index: 500;
-  height: 25px;
+  height: 150px;
   text-shadow: -0.015em 0 0 red, 0.015em 0 0 cyan;
   font-weight: 100;
+  line-height: normal;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (width < 950px) {
+    font-size: 70px;
+  }
 }
 
 .noise {
