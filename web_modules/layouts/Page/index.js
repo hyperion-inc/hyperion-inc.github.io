@@ -61,17 +61,19 @@ export default class Page extends Component { // eslint-disable-line
           />
           <Header isDark />
           <div className = { styles.background }></div>
-          {
-            head.title &&
-            <h1>{ head.title }</h1>
-          }
-          {
-            body &&
-            <div
-              dangerouslySetInnerHTML={ { __html: body } }
-            />
-          }
-          { this.props.children }
+          <div className = { styles.container }>
+            {
+              head.title &&
+              <h1>{ head.title }</h1>
+            }
+            {
+              body &&
+              <div
+                dangerouslySetInnerHTML={ { __html: body } }
+              />
+            }
+            { this.props.children }
+          </div>
         </div>
         <Footer />
       </div>

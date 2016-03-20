@@ -31,10 +31,6 @@
   @media (width < 600px) {
     padding: 0 2rem;
   }
-
-  @media (width > 965px) {
-    padding: 0 10rem;
-  }
 }
 
 .navPart1,
