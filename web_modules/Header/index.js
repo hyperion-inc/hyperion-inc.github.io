@@ -8,8 +8,8 @@ import classNames from 'classnames';
 
 export default class Header extends Component { // eslint-disable-line
   static propTypes = {
-    isLight: PropTypes.boolean,
-    isDark: PropTypes.boolean
+    isLight: PropTypes.bool,
+    isDark: PropTypes.bool
   }
 
   render() {
