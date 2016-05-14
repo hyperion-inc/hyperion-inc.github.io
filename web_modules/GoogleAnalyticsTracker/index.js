@@ -25,19 +25,25 @@ export default class GoogleAnalyticsTracker extends Component {
       } else {
         console.info('ga.create', pkg.googleAnalyticsUA);
       }
-      this.logPageview();
     }
+  }
+
+  componentDidMount() {
+    this.logPageview(this.props.params.splat);
   }
 
   componentWillReceiveProps(props) {
     if (props.params.splat !== this.props.params.splat) {
-      this.logPageview();
+      this.logPageview(props.params.splat);
     }
   }
 
-  logPageview() {
+  logPageview(splat) {
     if (isClient) {
+      const title = splat || 'Hyperion Industries';
       if (isProduction) {
+        ga('set', 'title', title);
+        ga('set', 'page', `/${splat}`);
         ga('send', 'pageview');
       } else {
         console.info('New pageview', window.location.href);
